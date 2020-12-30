@@ -1,0 +1,1 @@
+CREATE DATABASE [Companies Spends Profits]
