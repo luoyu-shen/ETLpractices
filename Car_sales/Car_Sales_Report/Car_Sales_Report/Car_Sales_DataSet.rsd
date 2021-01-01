@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>Car_Sales</DataSourceReference>
+      <CommandText>SELECT        Raw_key, Manufacturer, Model, Fuel_efficiency, [Sale Date], [Sold Price in Thousands]
+FROM            work_car_sales</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="Raw_key">
+        <DataField>Raw_key</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Manufacturer">
+        <DataField>Manufacturer</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Model">
+        <DataField>Model</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Fuel_efficiency">
+        <DataField>Fuel_efficiency</DataField>
+        <rd:TypeName>System.Double</rd:TypeName>
+      </Field>
+      <Field Name="Sale_Date">
+        <DataField>Sale Date</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="Sold_Price_in_Thousands">
+        <DataField>Sold Price in Thousands</DataField>
+        <rd:TypeName>System.Double</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
